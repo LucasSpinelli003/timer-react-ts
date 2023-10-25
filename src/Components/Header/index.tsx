@@ -1,12 +1,18 @@
 import { HeaderContainer } from './styles'
+import Logo from '../../assets/logo-ignite.svg'
+import { Timer, Scroll } from 'phosphor-react'
 
 export function Header() {
   return (
     <HeaderContainer>
-      <span>Logo</span>
+      <img src={Logo} alt="Logo-Ignite" />
       <nav>
-        <a href="">timer</a>
-        <a href="">history</a>
+        <a href="">
+          <Timer size={24} />
+        </a>
+        <a href="">
+        <Scroll size={24} />
+        </a>
       </nav>
     </HeaderContainer>
   )
